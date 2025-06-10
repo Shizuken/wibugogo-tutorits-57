@@ -6,21 +6,12 @@ const Header = () => {
   return (
     <header className="bg-white border-b border-gray-200 px-6 py-4">
       <div className="flex items-center justify-between">
-        {/* Logo and Welcome Section */}
-        <div className="flex items-center space-x-4">
-          <div className="flex items-center space-x-2">
-            <img 
-              src="/lovable-uploads/8fbf4b8f-dae2-4be5-9636-f2a52317c170.png" 
-              alt="TutorITS Logo" 
-              className="h-10 w-auto"
-            />
-          </div>
-          <div>
-            <h1 className="text-2xl font-bold text-gray-900 mb-1">Welcome to TutorITS</h1>
-            <p className="text-gray-600">
-              Welcome back, <span className="text-[#93AAC7] font-medium cursor-pointer hover:underline">@student</span>!
-            </p>
-          </div>
+        {/* Welcome Section */}
+        <div>
+          <h1 className="text-2xl font-bold text-gray-900 mb-1">Welcome to TutorITS</h1>
+          <p className="text-gray-600">
+            Welcome back, <span className="text-[#93AAC7] font-medium cursor-pointer hover:underline">@student</span>!
+          </p>
         </div>
 
         {/* Search and Account */}

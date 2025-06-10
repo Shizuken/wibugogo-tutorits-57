@@ -28,10 +28,20 @@ const Sidebar = () => {
       <div className="p-4 border-b border-gray-200 flex items-center justify-between">
         {!isCollapsed && (
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-[#93AAC7] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">T</span>
-            </div>
-            <span className="font-bold text-[#93AAC7] text-lg">TutorITS</span>
+            <img 
+              src="/lovable-uploads/8fbf4b8f-dae2-4be5-9636-f2a52317c170.png" 
+              alt="TutorITS Logo" 
+              className="h-8 w-auto"
+            />
+          </div>
+        )}
+        {isCollapsed && (
+          <div className="flex justify-center w-full">
+            <img 
+              src="/lovable-uploads/8fbf4b8f-dae2-4be5-9636-f2a52317c170.png" 
+              alt="TutorITS Logo" 
+              className="h-8 w-auto"
+            />
           </div>
         )}
         <button
