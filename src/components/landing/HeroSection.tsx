@@ -4,37 +4,36 @@ import { BookOpen, Users, Award } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-soft-white via-pastel-sky-blue to-scholarly-blue">
-      {/* Wave Background */}
-      <div className="absolute inset-0">
-        <svg viewBox="0 0 1200 400" className="w-full h-full opacity-30">
-          <path
-            d="M0,300 Q300,200 600,250 T1200,200 L1200,400 L0,400 Z"
-            fill="url(#wave-gradient)"
-          />
-          <defs>
-            <linearGradient id="wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="hsl(var(--scholarly-blue))" />
-              <stop offset="100%" stopColor="hsl(var(--bright-mustard))" />
-            </linearGradient>
-          </defs>
-        </svg>
+    <section className="relative overflow-hidden bg-gradient-to-br from-cream-white via-pastel-sky-blue to-scholarly-blue py-16">
+      {/* Floating Academic Cards */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-20 left-10 bg-white rounded-xl shadow-lg p-4 animate-bounce-subtle">
+          <div className="text-deep-navy font-semibold">Aljabar Dasar</div>
+          <div className="text-graphite-gray text-sm">Matematika</div>
+        </div>
+        <div className="absolute top-32 right-16 bg-white rounded-xl shadow-lg p-4 animate-bounce-subtle" style={{animationDelay: '0.3s'}}>
+          <div className="text-deep-navy font-semibold">Python Dasar</div>
+          <div className="text-graphite-gray text-sm">Pemrograman</div>
+        </div>
+        <div className="absolute bottom-32 left-20 bg-white rounded-xl shadow-lg p-4 animate-bounce-subtle" style={{animationDelay: '0.6s'}}>
+          <div className="text-deep-navy font-semibold">Statistik Bisnis</div>
+          <div className="text-graphite-gray text-sm">Ekonomi</div>
+        </div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 py-24">
+      <div className="relative max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="space-y-8">
-            <div className="space-y-4">
-              <h1 className="text-5xl lg:text-6xl font-bold text-deep-navy leading-tight">
-                Explore Free Lessons in{" "}
-                <span className="text-scholarly-blue">Math</span>,{" "}
-                <span className="text-bright-mustard">Science</span>,{" "}
-                <span className="text-scholarly-blue">Arts</span> & More
+            <div className="space-y-6">
+              <h1 className="text-4xl lg:text-5xl font-bold text-deep-navy leading-tight">
+                Belajar bareng mahasiswa ITS,{" "}
+                <span className="text-scholarly-blue">kapan saja</span>,{" "}
+                <span className="text-bright-mustard">di mana saja</span>
               </h1>
               <p className="text-xl text-graphite-gray leading-relaxed">
-                Join millions of learners making progress at their own pace. 
-                Discover interactive lessons, engaging exercises, and personalized learning paths.
+                Platform peer-to-peer learning yang dikembangkan oleh dan untuk mahasiswa Institut Teknologi Sepuluh Nopember. 
+                Temukan tutor terbaik, ikuti kursus berkualitas, dan tingkatkan prestasi akademikmu bersama.
               </p>
             </div>
 
@@ -44,14 +43,14 @@ const HeroSection = () => {
                 size="lg" 
                 className="bg-bright-mustard hover:bg-yellow-400 text-deep-navy font-semibold px-8 py-4 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                Get Started
+                Mulai Belajar
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
                 className="border-2 border-scholarly-blue text-scholarly-blue hover:bg-scholarly-blue hover:text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300"
               >
-                Browse Courses
+                Jadi Tutor
               </Button>
             </div>
 
@@ -61,57 +60,67 @@ const HeroSection = () => {
                 <div className="flex items-center justify-center w-12 h-12 bg-bright-mustard rounded-full mx-auto mb-2">
                   <BookOpen className="h-6 w-6 text-deep-navy" />
                 </div>
-                <div className="text-2xl font-bold text-deep-navy">1000+</div>
-                <div className="text-sm text-graphite-gray">Lessons</div>
+                <div className="text-2xl font-bold text-deep-navy">500+</div>
+                <div className="text-sm text-graphite-gray">Kursus</div>
               </div>
               <div className="text-center">
                 <div className="flex items-center justify-center w-12 h-12 bg-scholarly-blue rounded-full mx-auto mb-2">
                   <Users className="h-6 w-6 text-white" />
                 </div>
-                <div className="text-2xl font-bold text-deep-navy">50M+</div>
-                <div className="text-sm text-graphite-gray">Learners</div>
+                <div className="text-2xl font-bold text-deep-navy">2000+</div>
+                <div className="text-sm text-graphite-gray">Mahasiswa</div>
               </div>
               <div className="text-center">
                 <div className="flex items-center justify-center w-12 h-12 bg-bright-mustard rounded-full mx-auto mb-2">
                   <Award className="h-6 w-6 text-deep-navy" />
                 </div>
-                <div className="text-2xl font-bold text-deep-navy">Free</div>
-                <div className="text-sm text-graphite-gray">Forever</div>
+                <div className="text-2xl font-bold text-deep-navy">ITS</div>
+                <div className="text-sm text-graphite-gray">Community</div>
               </div>
             </div>
           </div>
 
-          {/* Illustration */}
+          {/* Illustration - Students studying together */}
           <div className="relative">
-            <div className="bg-cream-white rounded-3xl p-8 shadow-2xl">
+            <div className="bg-white rounded-3xl p-8 shadow-2xl">
               <div className="space-y-6">
-                {/* Bookshelf illustration */}
-                <div className="bg-scholarly-blue rounded-2xl p-6 text-center">
-                  <BookOpen className="h-16 w-16 text-white mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold text-white">Interactive Learning</h3>
-                  <p className="text-blue-100 mt-2">Hands-on exercises and instant feedback</p>
+                {/* Study Group illustration */}
+                <div className="bg-gradient-to-r from-scholarly-blue to-pastel-sky-blue rounded-2xl p-6 text-center">
+                  <div className="flex justify-center space-x-2 mb-4">
+                    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                      <span className="text-scholarly-blue text-sm font-bold">👩‍🎓</span>
+                    </div>
+                    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                      <span className="text-scholarly-blue text-sm font-bold">👨‍🎓</span>
+                    </div>
+                    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                      <span className="text-scholarly-blue text-sm font-bold">👩‍🎓</span>
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-semibold text-white">Collaborative Learning</h3>
+                  <p className="text-blue-100 mt-2">Belajar bersama sesama mahasiswa ITS</p>
                 </div>
                 
-                {/* Progress visualization */}
-                <div className="bg-pastel-sky-blue rounded-2xl p-6">
+                {/* Learning Progress */}
+                <div className="bg-cream-white rounded-2xl p-6">
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-deep-navy font-medium">Today's Progress</span>
-                    <span className="text-scholarly-blue font-bold">75%</span>
+                    <span className="text-deep-navy font-medium">Progress Minggu Ini</span>
+                    <span className="text-scholarly-blue font-bold">85%</span>
                   </div>
-                  <div className="w-full bg-white rounded-full h-3">
-                    <div className="bg-bright-mustard h-3 rounded-full w-3/4 transition-all duration-1000"></div>
+                  <div className="w-full bg-pastel-sky-blue rounded-full h-3">
+                    <div className="bg-bright-mustard h-3 rounded-full w-4/5 transition-all duration-1000"></div>
                   </div>
-                  <p className="text-graphite-gray text-sm mt-2">3 of 4 lessons completed</p>
+                  <p className="text-graphite-gray text-sm mt-2">4 dari 5 sesi telah selesai</p>
                 </div>
               </div>
             </div>
             
-            {/* Floating elements */}
+            {/* Floating ITS Elements */}
             <div className="absolute -top-4 -right-4 w-16 h-16 bg-bright-mustard rounded-full flex items-center justify-center animate-bounce-subtle">
-              <span className="text-2xl">📚</span>
+              <span className="text-2xl">🎓</span>
             </div>
             <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-scholarly-blue rounded-full flex items-center justify-center animate-bounce-subtle" style={{animationDelay: '0.5s'}}>
-              <span className="text-xl">✨</span>
+              <span className="text-xl text-white font-bold">ITS</span>
             </div>
           </div>
         </div>

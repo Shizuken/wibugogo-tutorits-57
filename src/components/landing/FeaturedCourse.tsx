@@ -45,12 +45,11 @@ const FeaturedCourse = () => {
           <div className="space-y-6">
             <div>
               <h2 className="text-4xl font-bold text-deep-navy mb-4">
-                Featured Course: Intro to Algebra
+                Pengantar Analisis Regresi
               </h2>
               <p className="text-xl text-graphite-gray leading-relaxed">
-                Master the fundamentals of algebra with our step-by-step approach. 
-                From basic equations to advanced problem-solving techniques, this course 
-                will build your confidence in mathematics.
+                Pelajari dasar-dasar analisis regresi linear dan non-linear untuk penelitian dan analisis data. 
+                Cocok untuk mahasiswa statistik, ekonomi, dan teknik industri ITS.
               </p>
             </div>
 
