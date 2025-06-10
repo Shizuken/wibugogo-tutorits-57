@@ -62,6 +62,11 @@ const TutorCard = ({ name, image, title, specialization, price, rating, studentC
           <span>{studentCount} siswa</span>
         </div>
         
+        {/* Hire Now Button */}
+        <button className="w-full bg-bright-mustard hover:bg-bright-mustard/80 text-deep-navy text-xs font-medium py-2 px-3 rounded-lg transition-colors duration-200 mb-2">
+          Sewa Sekarang
+        </button>
+        
         {/* Review Button */}
         <button className="w-full bg-scholarly-blue hover:bg-pastel-sky-blue text-white text-xs font-medium py-2 px-3 rounded-lg transition-colors duration-200 flex items-center justify-center gap-1">
           <MessageSquare size={12} />
