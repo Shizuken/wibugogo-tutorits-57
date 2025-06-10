@@ -5,12 +5,14 @@ interface TutorCardProps {
   name: string;
   image: string;
   title: string;
+  specialization: string;
+  price: string;
   rating: number;
   studentCount: number;
   reviewCount: number;
 }
 
-const TutorCard = ({ name, image, title, rating, studentCount, reviewCount }: TutorCardProps) => {
+const TutorCard = ({ name, image, title, specialization, price, rating, studentCount, reviewCount }: TutorCardProps) => {
   return (
     <div className="bg-white rounded-xl border border-pastel-sky-blue shadow-sm hover:shadow-md transition-all duration-200 hover:scale-105 cursor-pointer overflow-hidden">
       {/* Profile Image */}
@@ -28,6 +30,12 @@ const TutorCard = ({ name, image, title, rating, studentCount, reviewCount }: Tu
         <div className="space-y-1">
           <h3 className="font-semibold text-deep-navy text-sm leading-tight">{name}</h3>
           <p className="text-xs text-graphite-gray">{title}</p>
+          <p className="text-xs text-scholarly-blue font-medium">{specialization}</p>
+        </div>
+        
+        {/* Price */}
+        <div className="bg-bright-mustard text-deep-navy text-xs font-semibold px-2 py-1 rounded-md inline-block">
+          {price}
         </div>
         
         {/* Rating */}

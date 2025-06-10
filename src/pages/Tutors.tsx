@@ -9,6 +9,8 @@ const Tutors = () => {
       name: "Rizki Pratama",
       image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
       title: "Statistik & Data Science",
+      specialization: "Distribusi Normal & Analisis Regresi",
+      price: "Rp 75.000/jam",
       rating: 5,
       studentCount: 245,
       reviewCount: 89
@@ -17,6 +19,8 @@ const Tutors = () => {
       name: "Sari Indahsari",
       image: "/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png",
       title: "Teknik Mesin",
+      specialization: "Mekanika Fluida & Termodinamika",
+      price: "Rp 85.000/jam",
       rating: 4,
       studentCount: 156,
       reviewCount: 67
@@ -25,6 +29,8 @@ const Tutors = () => {
       name: "Ahmad Fauzi",
       image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
       title: "Matematika Terapan",
+      specialization: "Kalkulus Diferensial & Integral",
+      price: "Rp 70.000/jam",
       rating: 5,
       studentCount: 312,
       reviewCount: 124
@@ -33,6 +39,8 @@ const Tutors = () => {
       name: "Dewi Maharani",
       image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
       title: "Fisika Dasar",
+      specialization: "Kinematika & Dinamika Partikel",
+      price: "Rp 65.000/jam",
       rating: 4,
       studentCount: 198,
       reviewCount: 78
@@ -41,6 +49,8 @@ const Tutors = () => {
       name: "Budi Santoso",
       image: "/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png",
       title: "Pemrograman Python",
+      specialization: "Data Structure & Machine Learning",
+      price: "Rp 95.000/jam",
       rating: 5,
       studentCount: 423,
       reviewCount: 156
@@ -49,6 +59,8 @@ const Tutors = () => {
       name: "Nia Ramadhani",
       image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
       title: "Ekonomi Bisnis",
+      specialization: "Ekonomi Mikro & Analisis Pasar",
+      price: "Rp 60.000/jam",
       rating: 4,
       studentCount: 167,
       reviewCount: 92
@@ -57,6 +69,8 @@ const Tutors = () => {
       name: "Dimas Prasetyo",
       image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
       title: "Kimia Organik",
+      specialization: "Reaksi Organik & Sintesis",
+      price: "Rp 80.000/jam",
       rating: 5,
       studentCount: 134,
       reviewCount: 56
@@ -65,6 +79,8 @@ const Tutors = () => {
       name: "Fitri Handayani",
       image: "/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png",
       title: "Algoritma & Struktur Data",
+      specialization: "Sorting & Search Algorithms",
+      price: "Rp 90.000/jam",
       rating: 4,
       studentCount: 289,
       reviewCount: 98
@@ -73,6 +89,8 @@ const Tutors = () => {
       name: "Arief Wibowo",
       image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
       title: "Kalkulus Diferensial",
+      specialization: "Limit & Turunan Fungsi",
+      price: "Rp 75.000/jam",
       rating: 5,
       studentCount: 356,
       reviewCount: 134
@@ -81,6 +99,8 @@ const Tutors = () => {
       name: "Maya Sari",
       image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
       title: "Manajemen Keuangan",
+      specialization: "Analisis Investasi & Portfolio",
+      price: "Rp 70.000/jam",
       rating: 4,
       studentCount: 187,
       reviewCount: 71
@@ -89,6 +109,8 @@ const Tutors = () => {
       name: "Hendri Gunawan",
       image: "/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png",
       title: "Database Management",
+      specialization: "SQL & Database Design",
+      price: "Rp 85.000/jam",
       rating: 5,
       studentCount: 234,
       reviewCount: 87
@@ -97,6 +119,8 @@ const Tutors = () => {
       name: "Anisa Putri",
       image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
       title: "Termodinamika",
+      specialization: "Hukum Termodinamika & Entropi",
+      price: "Rp 80.000/jam",
       rating: 4,
       studentCount: 123,
       reviewCount: 45
@@ -120,17 +144,19 @@ const Tutors = () => {
             <section className="bg-white rounded-xl shadow-sm border border-pastel-sky-blue p-6">
               <h2 className="text-2xl font-bold text-deep-navy mb-6">Our Teaching Faculty</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                {allTutors.map((tutor, index) => (
-                  <TutorCard
-                    key={index}
-                    name={tutor.name}
-                    image={tutor.image}
-                    title={tutor.title}
-                    rating={tutor.rating}
-                    studentCount={tutor.studentCount}
-                    reviewCount={tutor.reviewCount}
-                  />
-                ))}
+                 {allTutors.map((tutor, index) => (
+                   <TutorCard
+                     key={index}
+                     name={tutor.name}
+                     image={tutor.image}
+                     title={tutor.title}
+                     specialization={tutor.specialization}
+                     price={tutor.price}
+                     rating={tutor.rating}
+                     studentCount={tutor.studentCount}
+                     reviewCount={tutor.reviewCount}
+                   />
+                 ))}
               </div>
             </section>
 
