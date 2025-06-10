@@ -1,4 +1,6 @@
 
+import Sidebar from "@/components/Sidebar";
+import Header from "@/components/Header";
 import CourseCard from "@/components/CourseCard";
 
 const Explore = () => {
@@ -18,31 +20,51 @@ const Explore = () => {
   const categories = ["All", "Mathematics", "Physics", "Chemistry", "Computer Science", "Economics"];
 
   return (
-    <div className="p-6">
-      <h1 className="text-3xl font-bold text-gray-900 mb-6">Explore All Courses</h1>
-      
-      {/* Category Filter */}
-      <div className="mb-8">
-        <div className="flex flex-wrap gap-2">
-          {categories.map((category) => (
-            <button
-              key={category}
-              className="px-4 py-2 rounded-full border border-[#93AAC7] text-[#93AAC7] hover:bg-[#93AAC7] hover:text-white transition-colors"
-            >
-              {category}
-            </button>
-          ))}
-        </div>
-      </div>
+    <div className="flex h-screen bg-cream-white">
+      <Sidebar />
+      <div className="flex-1 flex flex-col overflow-hidden">
+        <Header />
+        <main className="flex-1 overflow-auto bg-cream-white">
+          <div className="p-6 space-y-8">
+            {/* Hero Section */}
+            <section className="bg-gradient-to-r from-scholarly-blue to-pastel-sky-blue rounded-xl shadow-sm p-8 text-center">
+              <h1 className="text-4xl font-bold text-deep-navy mb-4">Explore All Courses</h1>
+              <p className="text-graphite-gray text-lg">Discover thousands of courses across different subjects</p>
+            </section>
+            
+            {/* Category Filter */}
+            <section className="bg-white rounded-xl shadow-sm border border-pastel-sky-blue p-6">
+              <h2 className="text-xl font-semibold text-deep-navy mb-4">Filter by Category</h2>
+              <div className="flex flex-wrap gap-3">
+                {categories.map((category) => (
+                  <button
+                    key={category}
+                    className="px-6 py-2 rounded-full border-2 border-scholarly-blue text-scholarly-blue hover:bg-scholarly-blue hover:text-white transition-all duration-300 font-medium"
+                  >
+                    {category}
+                  </button>
+                ))}
+              </div>
+            </section>
 
-      {/* Courses Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {allCourses.map((course, index) => (
-          <div key={index} className="space-y-2">
-            <CourseCard title={course.title} />
-            <p className="text-sm text-gray-500 text-center">{course.category}</p>
+            {/* Courses Grid */}
+            <section className="bg-white rounded-xl shadow-sm border border-pastel-sky-blue p-6">
+              <h2 className="text-2xl font-bold text-deep-navy mb-6">All Courses</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {allCourses.map((course, index) => (
+                  <div key={index} className="space-y-3">
+                    <CourseCard title={course.title} />
+                    <div className="text-center">
+                      <span className="inline-block px-3 py-1 bg-bright-mustard text-deep-navy text-sm font-medium rounded-full">
+                        {course.category}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
           </div>
-        ))}
+        </main>
       </div>
     </div>
   );

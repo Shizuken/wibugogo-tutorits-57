@@ -1,4 +1,6 @@
 
+import Sidebar from "@/components/Sidebar";
+import Header from "@/components/Header";
 import TutorCard from "@/components/TutorCard";
 
 const Tutors = () => {
@@ -36,18 +38,43 @@ const Tutors = () => {
   ];
 
   return (
-    <div className="p-6">
-      <h1 className="text-3xl font-bold text-gray-900 mb-6">Our Tutors</h1>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {allTutors.map((tutor, index) => (
-          <TutorCard
-            key={index}
-            name={tutor.name}
-            image={tutor.image}
-            title={tutor.title}
-          />
-        ))}
+    <div className="flex h-screen bg-cream-white">
+      <Sidebar />
+      <div className="flex-1 flex flex-col overflow-hidden">
+        <Header />
+        <main className="flex-1 overflow-auto bg-cream-white">
+          <div className="p-6 space-y-8">
+            {/* Hero Section */}
+            <section className="bg-gradient-to-r from-scholarly-blue to-pastel-sky-blue rounded-xl shadow-sm p-8 text-center">
+              <h1 className="text-4xl font-bold text-deep-navy mb-4">Meet Our Expert Tutors</h1>
+              <p className="text-graphite-gray text-lg">Learn from world-class educators and industry professionals</p>
+            </section>
+
+            {/* Tutors Grid */}
+            <section className="bg-white rounded-xl shadow-sm border border-pastel-sky-blue p-6">
+              <h2 className="text-2xl font-bold text-deep-navy mb-6">Our Teaching Faculty</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {allTutors.map((tutor, index) => (
+                  <TutorCard
+                    key={index}
+                    name={tutor.name}
+                    image={tutor.image}
+                    title={tutor.title}
+                  />
+                ))}
+              </div>
+            </section>
+
+            {/* Call to Action */}
+            <section className="bg-bright-mustard rounded-xl shadow-sm p-8 text-center">
+              <h3 className="text-2xl font-bold text-deep-navy mb-4">Want to become a tutor?</h3>
+              <p className="text-graphite-gray mb-6">Join our community of expert educators and help students around the world</p>
+              <button className="bg-deep-navy text-white px-8 py-3 rounded-full font-semibold hover:bg-graphite-gray transition-colors">
+                Apply to Teach
+              </button>
+            </section>
+          </div>
+        </main>
       </div>
     </div>
   );
