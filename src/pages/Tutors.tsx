@@ -5,32 +5,32 @@ const Tutors = () => {
   const allTutors = [
     {
       name: "Dr. Ahmad Rahman S.Stat., M.Stat.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&crop=face",
+      image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
       title: "Statistics & Data Science"
     },
     {
       name: "Prof Ir Budi Santoso ST MSc Eng PhD",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=300&fit=crop&crop=face",
+      image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
       title: "Mechanical Engineering"
     },
     {
       name: "Ir. Sri Maulidina S.Si., M.Si.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=300&fit=crop&crop=face",
-      title: "Chemistry & Materials Science"
+      image: "/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png",
+      title: "Mathematics & Applied Math"
     },
     {
       name: "Dr. Indira Kusuma S.Mat., M.Sc.",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=300&fit=crop&crop=face",
+      image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
       title: "Mathematics & Applied Math"
     },
     {
       name: "Prof Dr. Hendra Wijaya S.T., M.T.",
-      image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=300&fit=crop&crop=face",
+      image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
       title: "Computer Science & AI"
     },
     {
       name: "Dr. Maya Sari S.E., M.M.",
-      image: "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=400&h=300&fit=crop&crop=face",
+      image: "/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png",
       title: "Economics & Business"
     }
   ];

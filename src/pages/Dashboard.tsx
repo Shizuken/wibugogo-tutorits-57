@@ -8,24 +8,24 @@ const Dashboard = () => {
     { title: "Fisika Mekanik" },
     { title: "Kimia Industri" },
     { title: "Kalkulus II" },
-    { title: "Lembaga" }
+    { title: "Lembaga Keuangan" }
   ];
 
   const tutors = [
     {
       name: "Dr. xxx aaaa S.Stat., M.Stat.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&crop=face",
-      title: "Statistics Professor"
+      image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
+      title: "Mathematics Professor"
     },
     {
       name: "Prof Ir xxxx ST MSc Eng PhD",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=300&fit=crop&crop=face",
+      image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
       title: "Engineering Professor"
     },
     {
       name: "Ir. Sri Maulidina S.Si., M.Si.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=300&fit=crop&crop=face",
-      title: "Science Lecturer"
+      image: "/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png",
+      title: "Mathematics Lecturer"
     }
   ];
 
