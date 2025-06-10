@@ -21,11 +21,11 @@ const Sidebar = () => {
 
   return (
     <div className={cn(
-      "bg-white border-r border-gray-200 transition-all duration-300 flex flex-col",
+      "bg-card border-r border-border transition-all duration-300 flex flex-col",
       isCollapsed ? "w-16" : "w-64"
     )}>
       {/* Logo and Toggle */}
-      <div className="p-4 border-b border-gray-200 flex items-center justify-between">
+      <div className="p-4 border-b border-border flex items-center justify-between">
         {!isCollapsed && (
           <div className="flex items-center space-x-2">
             <img 
@@ -46,7 +46,7 @@ const Sidebar = () => {
         )}
         <button
           onClick={() => setIsCollapsed(!isCollapsed)}
-          className="p-1 rounded-md hover:bg-gray-100 text-[#93AAC7]"
+          className="p-1 rounded-md hover:bg-accent text-[#93AAC7]"
         >
           {isCollapsed ? <ChevronRight size={20} /> : <ChevronLeft size={20} />}
         </button>
@@ -60,8 +60,8 @@ const Sidebar = () => {
             to={item.href}
             className={({ isActive }) =>
               cn(
-                "flex items-center space-x-3 px-3 py-2 rounded-lg text-[#93AAC7] hover:bg-gray-50 transition-colors",
-                isActive && "bg-blue-50 text-blue-600 font-medium"
+                "flex items-center space-x-3 px-3 py-2 rounded-lg text-[#93AAC7] hover:bg-accent transition-colors",
+                isActive && "bg-blue-50 dark:bg-blue-950 text-blue-600 font-medium"
               )
             }
           >
@@ -73,7 +73,7 @@ const Sidebar = () => {
         {/* Settings Section */}
         <div className="pt-6">
           <h3 className={cn(
-            "text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2",
+            "text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2",
             isCollapsed && "text-center"
           )}>
             {isCollapsed ? "•" : "Settings"}
@@ -84,8 +84,8 @@ const Sidebar = () => {
               to={item.href}
               className={({ isActive }) =>
                 cn(
-                  "flex items-center space-x-3 px-3 py-2 rounded-lg text-[#93AAC7] hover:bg-gray-50 transition-colors",
-                  isActive && "bg-blue-50 text-blue-600 font-medium"
+                  "flex items-center space-x-3 px-3 py-2 rounded-lg text-[#93AAC7] hover:bg-accent transition-colors",
+                  isActive && "bg-blue-50 dark:bg-blue-950 text-blue-600 font-medium"
                 )
               }
             >
@@ -97,9 +97,9 @@ const Sidebar = () => {
       </nav>
 
       {/* Help Section */}
-      <div className="p-4 border-t border-gray-200">
+      <div className="p-4 border-t border-border">
         <div className={cn(
-          "bg-gray-50 rounded-lg p-4",
+          "bg-muted rounded-lg p-4",
           isCollapsed && "p-2"
         )}>
           <div className="flex items-center justify-center mb-2">
@@ -109,8 +109,8 @@ const Sidebar = () => {
           </div>
           {!isCollapsed && (
             <>
-              <h4 className="font-semibold text-gray-900 text-sm mb-1">NEED HELP?</h4>
-              <p className="text-xs text-gray-600 mb-3 leading-relaxed">
+              <h4 className="font-semibold text-foreground text-sm mb-1">NEED HELP?</h4>
+              <p className="text-xs text-muted-foreground mb-3 leading-relaxed">
                 In case need to report problems about meeting, courses, or ratings. Provided by the help center.
               </p>
               <button className="w-full bg-[#93AAC7] text-white px-3 py-2 rounded-md text-sm hover:bg-[#7a94b8] transition-colors">
