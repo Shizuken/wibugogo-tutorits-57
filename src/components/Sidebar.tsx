@@ -31,7 +31,7 @@ const Sidebar = () => {
             <img 
               src="/lovable-uploads/8fbf4b8f-dae2-4be5-9636-f2a52317c170.png" 
               alt="TutorITS Logo" 
-              className="h-8 w-auto"
+              className="h-12 w-auto"
             />
           </div>
         )}
@@ -40,7 +40,7 @@ const Sidebar = () => {
             <img 
               src="/lovable-uploads/8fbf4b8f-dae2-4be5-9636-f2a52317c170.png" 
               alt="TutorITS Logo" 
-              className="h-8 w-auto"
+              className="h-10 w-auto"
             />
           </div>
         )}

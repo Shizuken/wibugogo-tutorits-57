@@ -13,18 +13,18 @@ const Dashboard = () => {
 
   const tutors = [
     {
-      name: "Dr. xxx aaaa S.Stat., M.Stat.",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+      name: "Dr. Ahmad Rahman S.Stat., M.Stat.",
+      image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
       title: "Mathematics Professor"
     },
     {
-      name: "Prof Ir xxxx ST MSc Eng PhD",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+      name: "Prof. Ir. Budi Santoso ST. MSc. Eng PhD.",
+      image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
       title: "Engineering Professor"
     },
     {
       name: "Ir. Sri Maulidina S.Si., M.Si.",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+      image: "/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png",
       title: "Mathematics Lecturer"
     }
   ];
