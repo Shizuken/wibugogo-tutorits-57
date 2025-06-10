@@ -6,34 +6,100 @@ import TutorCard from "@/components/TutorCard";
 const Tutors = () => {
   const allTutors = [
     {
-      name: "Dr. Ahmad Rahman S.Stat., M.Stat.",
+      name: "Rizki Pratama",
       image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
-      title: "Statistics & Data Science"
+      title: "Statistik & Data Science",
+      rating: 5,
+      studentCount: 245,
+      reviewCount: 89
     },
     {
-      name: "Prof Ir Budi Santoso ST MSc Eng PhD",
-      image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
-      title: "Mechanical Engineering"
-    },
-    {
-      name: "Ir. Sri Maulidina S.Si., M.Si.",
+      name: "Sari Indahsari",
       image: "/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png",
-      title: "Mathematics & Applied Math"
+      title: "Teknik Mesin",
+      rating: 4,
+      studentCount: 156,
+      reviewCount: 67
     },
     {
-      name: "Dr. Indira Kusuma S.Mat., M.Sc.",
+      name: "Ahmad Fauzi",
+      image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
+      title: "Matematika Terapan",
+      rating: 5,
+      studentCount: 312,
+      reviewCount: 124
+    },
+    {
+      name: "Dewi Maharani",
       image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
-      title: "Mathematics & Applied Math"
+      title: "Fisika Dasar",
+      rating: 4,
+      studentCount: 198,
+      reviewCount: 78
     },
     {
-      name: "Prof Dr. Hendra Wijaya S.T., M.T.",
-      image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
-      title: "Computer Science & AI"
-    },
-    {
-      name: "Dr. Maya Sari S.E., M.M.",
+      name: "Budi Santoso",
       image: "/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png",
-      title: "Economics & Business"
+      title: "Pemrograman Python",
+      rating: 5,
+      studentCount: 423,
+      reviewCount: 156
+    },
+    {
+      name: "Nia Ramadhani",
+      image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
+      title: "Ekonomi Bisnis",
+      rating: 4,
+      studentCount: 167,
+      reviewCount: 92
+    },
+    {
+      name: "Dimas Prasetyo",
+      image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
+      title: "Kimia Organik",
+      rating: 5,
+      studentCount: 134,
+      reviewCount: 56
+    },
+    {
+      name: "Fitri Handayani",
+      image: "/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png",
+      title: "Algoritma & Struktur Data",
+      rating: 4,
+      studentCount: 289,
+      reviewCount: 98
+    },
+    {
+      name: "Arief Wibowo",
+      image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
+      title: "Kalkulus Diferensial",
+      rating: 5,
+      studentCount: 356,
+      reviewCount: 134
+    },
+    {
+      name: "Maya Sari",
+      image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
+      title: "Manajemen Keuangan",
+      rating: 4,
+      studentCount: 187,
+      reviewCount: 71
+    },
+    {
+      name: "Hendri Gunawan",
+      image: "/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png",
+      title: "Database Management",
+      rating: 5,
+      studentCount: 234,
+      reviewCount: 87
+    },
+    {
+      name: "Anisa Putri",
+      image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
+      title: "Termodinamika",
+      rating: 4,
+      studentCount: 123,
+      reviewCount: 45
     }
   ];
 
@@ -60,6 +126,9 @@ const Tutors = () => {
                     name={tutor.name}
                     image={tutor.image}
                     title={tutor.title}
+                    rating={tutor.rating}
+                    studentCount={tutor.studentCount}
+                    reviewCount={tutor.reviewCount}
                   />
                 ))}
               </div>

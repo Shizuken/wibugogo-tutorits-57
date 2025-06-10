@@ -15,19 +15,28 @@ const Dashboard = () => {
 
   const tutors = [
     {
-      name: "Dr. Ahmad Rahman S.Stat., M.Stat.",
+      name: "Rizki Pratama",
       image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
-      title: "Mathematics Professor"
+      title: "Statistik & Data Science",
+      rating: 5,
+      studentCount: 245,
+      reviewCount: 89
     },
     {
-      name: "Prof. Ir. Budi Santoso ST. MSc. Eng PhD.",
-      image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
-      title: "Engineering Professor"
-    },
-    {
-      name: "Ir. Sri Maulidina S.Si., M.Si.",
+      name: "Sari Indahsari",
       image: "/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png",
-      title: "Mathematics Lecturer"
+      title: "Teknik Mesin",
+      rating: 4,
+      studentCount: 156,
+      reviewCount: 67
+    },
+    {
+      name: "Ahmad Fauzi",
+      image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
+      title: "Matematika Terapan",
+      rating: 5,
+      studentCount: 312,
+      reviewCount: 124
     }
   ];
 
@@ -64,6 +73,9 @@ const Dashboard = () => {
                     name={tutor.name}
                     image={tutor.image}
                     title={tutor.title}
+                    rating={tutor.rating}
+                    studentCount={tutor.studentCount}
+                    reviewCount={tutor.reviewCount}
                   />
                 ))}
               </div>
