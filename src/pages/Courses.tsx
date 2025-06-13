@@ -9,7 +9,7 @@ const Courses = () => {
       { 
         videoTitle: "Integral Parsial dan Substitusi", 
         major: "Matematika", 
-        tutorName: "Dr. Ahmad Wijaya",
+        tutorName: "Ahmad Wijaya",
         image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
         price: "Rp 75.000",
         rating: 5,
@@ -20,7 +20,7 @@ const Courses = () => {
       { 
         videoTitle: "Limit dan Kontinuitas Fungsi", 
         major: "Matematika", 
-        tutorName: "Prof. Sari Indahsari",
+        tutorName: "Sari Indahsari",
         image: "/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png",
         price: "Rp 80.000",
         rating: 4,
@@ -31,7 +31,7 @@ const Courses = () => {
       { 
         videoTitle: "Matriks dan Determinan", 
         major: "Matematika", 
-        tutorName: "Dr. Rizki Pratama",
+        tutorName: "Rizki Pratama",
         image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
         price: "Rp 65.000",
         rating: 5,
@@ -42,7 +42,7 @@ const Courses = () => {
       { 
         videoTitle: "Distribusi Probabilitas", 
         major: "Statistika", 
-        tutorName: "Dr. Maya Sari",
+        tutorName: "Maya Sari",
         image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
         price: "Rp 90.000",
         rating: 4,
@@ -55,7 +55,7 @@ const Courses = () => {
       { 
         videoTitle: "Hukum Newton dan Aplikasinya", 
         major: "Fisika", 
-        tutorName: "Prof. Budi Santoso",
+        tutorName: "Budi Santoso",
         image: "/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png",
         price: "Rp 70.000",
         rating: 5,
@@ -66,7 +66,7 @@ const Courses = () => {
       { 
         videoTitle: "Gelombang dan Bunyi", 
         major: "Fisika", 
-        tutorName: "Dr. Dewi Maharani",
+        tutorName: "Dewi Maharani",
         image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
         price: "Rp 85.000",
         rating: 4,
@@ -77,7 +77,7 @@ const Courses = () => {
       { 
         videoTitle: "Kalor dan Perpindahan Energi", 
         major: "Fisika", 
-        tutorName: "Dr. Dimas Prasetyo",
+        tutorName: "Dimas Prasetyo",
         image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
         price: "Rp 60.000",
         rating: 5,
@@ -90,7 +90,7 @@ const Courses = () => {
       { 
         videoTitle: "Reaksi Redoks dan Elektrolisis", 
         major: "Kimia", 
-        tutorName: "Prof. Fitri Handayani",
+        tutorName: "Fitri Handayani",
         image: "/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png",
         price: "Rp 95.000",
         rating: 4,
@@ -101,7 +101,7 @@ const Courses = () => {
       { 
         videoTitle: "Struktur Molekul Organik", 
         major: "Kimia Organik", 
-        tutorName: "Dr. Arief Wibowo",
+        tutorName: "Arief Wibowo",
         image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
         price: "Rp 75.000",
         rating: 5,
@@ -112,7 +112,7 @@ const Courses = () => {
       { 
         videoTitle: "Titrasi dan Analisis Kuantitatif", 
         major: "Kimia Analitik", 
-        tutorName: "Dr. Anisa Putri",
+        tutorName: "Anisa Putri",
         image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
         price: "Rp 55.000",
         rating: 4,

@@ -7,10 +7,7 @@ import TutorCard from "@/components/TutorCard";
 const Dashboard = () => {
   const courses = [
     { title: "Kalkulus I" },
-    { title: "Fisika Mekanik" },
-    { title: "Kimia Industri" },
-    { title: "Kalkulus II" },
-    { title: "Lembaga Keuangan" }
+    { title: "Fisika Mekanik" }
   ];
 
   const tutors = [
