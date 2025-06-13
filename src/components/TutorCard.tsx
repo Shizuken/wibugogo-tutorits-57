@@ -1,5 +1,5 @@
 
-import { Star, Users, MessageSquare, Phone } from "lucide-react";
+import { Star, Users, MessageSquare, Phone, Clock } from "lucide-react";
 
 interface TutorCardProps {
   name: string;
@@ -47,22 +47,43 @@ const TutorCard = ({ name, image, title, specialization, price, rating, studentC
           </button>
         </div>
         
-        {/* Rating */}
-        <div className="flex items-center gap-1">
-          <div className="flex items-center">
-            {[1, 2, 3, 4, 5].map((star) => (
-              <Star 
-                key={star}
-                size={12}
-                className={`${
-                  star <= rating 
-                    ? "fill-bright-mustard text-bright-mustard" 
-                    : "text-gray-300"
-                }`}
-              />
-            ))}
+        {/* Rating and Social Media */}
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-1">
+            <div className="flex items-center">
+              {[1, 2, 3, 4, 5].map((star) => (
+                <Star 
+                  key={star}
+                  size={12}
+                  className={`${
+                    star <= rating 
+                      ? "fill-bright-mustard text-bright-mustard" 
+                      : "text-gray-300"
+                  }`}
+                />
+              ))}
+            </div>
+            <span className="text-xs text-graphite-gray ml-1">({reviewCount})</span>
           </div>
-          <span className="text-xs text-graphite-gray ml-1">({reviewCount})</span>
+          
+          {/* Social Media Icons */}
+          <div className="flex items-center gap-1">
+            <img 
+              src="/lovable-uploads/b97ee208-03f1-4a66-ab86-5713f53729cc.png" 
+              alt="WhatsApp" 
+              className="w-4 h-4 cursor-pointer hover:scale-110 transition-transform"
+            />
+            <img 
+              src="/lovable-uploads/a384c0f5-12ab-4db0-a146-f7eceb12935d.png" 
+              alt="Instagram" 
+              className="w-4 h-4 cursor-pointer hover:scale-110 transition-transform"
+            />
+            <img 
+              src="/lovable-uploads/0712c07a-1fcb-4200-9545-be83b90991b4.png" 
+              alt="LinkedIn" 
+              className="w-4 h-4 cursor-pointer hover:scale-110 transition-transform"
+            />
+          </div>
         </div>
         
         {/* Student Count and Working Hours */}
@@ -71,7 +92,10 @@ const TutorCard = ({ name, image, title, specialization, price, rating, studentC
             <Users size={12} />
             <span>{studentCount} siswa</span>
           </div>
-          <span>{workingHours} jam kerja</span>
+          <div className="flex items-center gap-1">
+            <Clock size={12} />
+            <span>{workingHours} jam kerja</span>
+          </div>
         </div>
         
         {/* Hire Now Button */}
