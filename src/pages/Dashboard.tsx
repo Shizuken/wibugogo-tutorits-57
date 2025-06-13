@@ -22,7 +22,8 @@ const Dashboard = () => {
       price: "Rp 80.000/jam",
       rating: 5,
       studentCount: 245,
-      reviewCount: 89
+      reviewCount: 89,
+      workingHours: 1240
     },
     {
       name: "Sari Indahsari",
@@ -32,7 +33,8 @@ const Dashboard = () => {
       price: "Rp 85.000/jam",
       rating: 4,
       studentCount: 156,
-      reviewCount: 67
+      reviewCount: 67,
+      workingHours: 780
     },
     {
       name: "Ahmad Fauzi",
@@ -42,7 +44,8 @@ const Dashboard = () => {
       price: "Rp 75.000/jam",
       rating: 5,
       studentCount: 312,
-      reviewCount: 124
+      reviewCount: 124,
+      workingHours: 1560
     }
   ];
 
@@ -84,6 +87,7 @@ const Dashboard = () => {
                     rating={tutor.rating}
                     studentCount={tutor.studentCount}
                     reviewCount={tutor.reviewCount}
+                    workingHours={tutor.workingHours}
                   />
                 ))}
               </div>

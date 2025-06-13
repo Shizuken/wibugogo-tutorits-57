@@ -13,7 +13,8 @@ const Tutors = () => {
       price: "Rp 75.000/jam",
       rating: 5,
       studentCount: 245,
-      reviewCount: 89
+      reviewCount: 89,
+      workingHours: 1240
     },
     {
       name: "Sari Indahsari",
@@ -23,7 +24,8 @@ const Tutors = () => {
       price: "Rp 85.000/jam",
       rating: 4,
       studentCount: 156,
-      reviewCount: 67
+      reviewCount: 67,
+      workingHours: 780
     },
     {
       name: "Ahmad Fauzi",
@@ -33,7 +35,8 @@ const Tutors = () => {
       price: "Rp 70.000/jam",
       rating: 5,
       studentCount: 312,
-      reviewCount: 124
+      reviewCount: 124,
+      workingHours: 1560
     },
     {
       name: "Dewi Maharani",
@@ -43,7 +46,8 @@ const Tutors = () => {
       price: "Rp 65.000/jam",
       rating: 4,
       studentCount: 198,
-      reviewCount: 78
+      reviewCount: 78,
+      workingHours: 990
     },
     {
       name: "Budi Santoso",
@@ -53,7 +57,8 @@ const Tutors = () => {
       price: "Rp 95.000/jam",
       rating: 5,
       studentCount: 423,
-      reviewCount: 156
+      reviewCount: 156,
+      workingHours: 2115
     },
     {
       name: "Nia Ramadhani",
@@ -63,7 +68,8 @@ const Tutors = () => {
       price: "Rp 60.000/jam",
       rating: 4,
       studentCount: 167,
-      reviewCount: 92
+      reviewCount: 92,
+      workingHours: 835
     },
     {
       name: "Dimas Prasetyo",
@@ -73,7 +79,8 @@ const Tutors = () => {
       price: "Rp 80.000/jam",
       rating: 5,
       studentCount: 134,
-      reviewCount: 56
+      reviewCount: 56,
+      workingHours: 670
     },
     {
       name: "Fitri Handayani",
@@ -83,7 +90,8 @@ const Tutors = () => {
       price: "Rp 90.000/jam",
       rating: 4,
       studentCount: 289,
-      reviewCount: 98
+      reviewCount: 98,
+      workingHours: 1445
     },
     {
       name: "Arief Wibowo",
@@ -93,7 +101,8 @@ const Tutors = () => {
       price: "Rp 75.000/jam",
       rating: 5,
       studentCount: 356,
-      reviewCount: 134
+      reviewCount: 134,
+      workingHours: 1780
     },
     {
       name: "Maya Sari",
@@ -103,7 +112,8 @@ const Tutors = () => {
       price: "Rp 70.000/jam",
       rating: 4,
       studentCount: 187,
-      reviewCount: 71
+      reviewCount: 71,
+      workingHours: 935
     },
     {
       name: "Hendri Gunawan",
@@ -113,7 +123,8 @@ const Tutors = () => {
       price: "Rp 85.000/jam",
       rating: 5,
       studentCount: 234,
-      reviewCount: 87
+      reviewCount: 87,
+      workingHours: 1170
     },
     {
       name: "Anisa Putri",
@@ -123,7 +134,8 @@ const Tutors = () => {
       price: "Rp 80.000/jam",
       rating: 4,
       studentCount: 123,
-      reviewCount: 45
+      reviewCount: 45,
+      workingHours: 615
     }
   ];
 
@@ -155,6 +167,7 @@ const Tutors = () => {
                      rating={tutor.rating}
                      studentCount={tutor.studentCount}
                      reviewCount={tutor.reviewCount}
+                     workingHours={tutor.workingHours}
                    />
                  ))}
               </div>
