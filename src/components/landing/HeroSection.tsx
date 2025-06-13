@@ -5,20 +5,12 @@ import { BookOpen, Users, Award } from "lucide-react";
 const HeroSection = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-cream-white via-pastel-sky-blue to-scholarly-blue py-16">
-      {/* Floating Academic Cards */}
+      {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 bg-white rounded-xl shadow-lg p-4 animate-bounce-subtle">
-          <div className="text-deep-navy font-semibold">Aljabar Dasar</div>
-          <div className="text-graphite-gray text-sm">Matematika</div>
-        </div>
-        <div className="absolute top-32 right-16 bg-white rounded-xl shadow-lg p-4 animate-bounce-subtle" style={{animationDelay: '0.3s'}}>
-          <div className="text-deep-navy font-semibold">Python Dasar</div>
-          <div className="text-graphite-gray text-sm">Pemrograman</div>
-        </div>
-        <div className="absolute bottom-32 left-20 bg-white rounded-xl shadow-lg p-4 animate-bounce-subtle" style={{animationDelay: '0.6s'}}>
-          <div className="text-deep-navy font-semibold">Statistik Bisnis</div>
-          <div className="text-graphite-gray text-sm">Ekonomi</div>
-        </div>
+        {/* Geometric shapes for visual appeal */}
+        <div className="absolute top-20 left-10 w-16 h-16 bg-white rounded-full opacity-20 animate-pulse"></div>
+        <div className="absolute top-32 right-16 w-12 h-12 bg-bright-mustard rounded-full opacity-30 animate-bounce" style={{animationDelay: '0.3s'}}></div>
+        <div className="absolute bottom-32 left-20 w-20 h-20 bg-scholarly-blue rounded-full opacity-15 animate-pulse" style={{animationDelay: '0.6s'}}></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6">
