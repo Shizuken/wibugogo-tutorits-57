@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - TutorITS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img src="/lovable-uploads/8fbf4b8f-dae2-4be5-9636-f2a52317c170.png" alt="TutorITS Logo" class="sidebar-logo">
+                <button class="sidebar-toggle">←</button>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item">
+                    <span class="nav-icon">🏠</span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="explore.html" class="nav-item active">
+                    <span class="nav-icon">🔍</span>
+                    <span>Explore</span>
+                </a>
+                <a href="tutors.html" class="nav-item">
+                    <span class="nav-icon">👥</span>
+                    <span>Tutors</span>
+                </a>
+                <a href="courses.html" class="nav-item">
+                    <span class="nav-icon">📚</span>
+                    <span>Courses</span>
+                </a>
+                
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Settings</h3>
+                    <a href="settings.html" class="nav-item">
+                        <span class="nav-icon">⚙️</span>
+                        <span>Settings</span>
+                    </a>
+                    <a href="account.html" class="nav-item">
+                        <span class="nav-icon">👤</span>
+                        <span>myITS Account</span>
+                    </a>
+                </div>
+            </nav>
+            
+            <div class="sidebar-help">
+                <div class="help-card">
+                    <div class="help-icon">❓</div>
+                    <h4>NEED HELP?</h4>
+                    <p>In case need to report problems about meeting, courses, or ratings. Provided by the help center.</p>
+                    <button class="help-button">Go to Help Center</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <header class="dashboard-header">
+                <div class="header-welcome">
+                    <h1>Welcome to TutorITS</h1>
+                    <p>Welcome back, <span class="username">@student</span>!</p>
+                </div>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" placeholder="Search courses" class="search-input">
+                    </div>
+                    <a href="account.html" class="account-link">
+                        <span class="account-icon">👤</span>
+                    </a>
+                </div>
+            </header>
+
+            <!-- Explore Content -->
+            <main class="explore-main">
+                <!-- Hero Section -->
+                <section class="explore-hero">
+                    <h1>Explore All Courses</h1>
+                    <p>Discover thousands of courses across different subjects</p>
+                </section>
+                
+                <!-- Category Filter -->
+                <section class="category-filter">
+                    <h2>Filter by Category</h2>
+                    <div class="category-buttons">
+                        <button class="category-btn active">All</button>
+                        <button class="category-btn">Mathematics</button>
+                        <button class="category-btn">Physics</button>
+                        <button class="category-btn">Chemistry</button>
+                        <button class="category-btn">Computer Science</button>
+                        <button class="category-btn">Economics</button>
+                    </div>
+                </section>
+
+                <!-- Courses Grid -->
+                <section class="all-courses">
+                    <h2>All Courses</h2>
+                    <div class="courses-grid-explore">
+                        <div class="course-item">
+                            <div class="course-card">
+                                <h3>Kalkulus I</h3>
+                            </div>
+                            <span class="course-category">Mathematics</span>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-card">
+                                <h3>Kalkulus II</h3>
+                            </div>
+                            <span class="course-category">Mathematics</span>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-card">
+                                <h3>Fisika Mekanik</h3>
+                            </div>
+                            <span class="course-category">Physics</span>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-card">
+                                <h3>Fisika Dasar</h3>
+                            </div>
+                            <span class="course-category">Physics</span>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-card">
+                                <h3>Kimia Industri</h3>
+                            </div>
+                            <span class="course-category">Chemistry</span>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-card">
+                                <h3>Kimia Organik</h3>
+                            </div>
+                            <span class="course-category">Chemistry</span>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-card">
+                                <h3>Algoritma</h3>
+                            </div>
+                            <span class="course-category">Computer Science</span>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-card">
+                                <h3>Struktur Data</h3>
+                            </div>
+                            <span class="course-category">Computer Science</span>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-card">
+                                <h3>Lembaga Ekonomi</h3>
+                            </div>
+                            <span class="course-category">Economics</span>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-card">
+                                <h3>Mikroekonomi</h3>
+                            </div>
+                            <span class="course-category">Economics</span>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

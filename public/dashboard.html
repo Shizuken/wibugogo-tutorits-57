@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - TutorITS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img src="/lovable-uploads/8fbf4b8f-dae2-4be5-9636-f2a52317c170.png" alt="TutorITS Logo" class="sidebar-logo">
+                <button class="sidebar-toggle">←</button>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item active">
+                    <span class="nav-icon">🏠</span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="explore.html" class="nav-item">
+                    <span class="nav-icon">🔍</span>
+                    <span>Explore</span>
+                </a>
+                <a href="tutors.html" class="nav-item">
+                    <span class="nav-icon">👥</span>
+                    <span>Tutors</span>
+                </a>
+                <a href="courses.html" class="nav-item">
+                    <span class="nav-icon">📚</span>
+                    <span>Courses</span>
+                </a>
+                
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Settings</h3>
+                    <a href="settings.html" class="nav-item">
+                        <span class="nav-icon">⚙️</span>
+                        <span>Settings</span>
+                    </a>
+                    <a href="account.html" class="nav-item">
+                        <span class="nav-icon">👤</span>
+                        <span>myITS Account</span>
+                    </a>
+                </div>
+            </nav>
+            
+            <div class="sidebar-help">
+                <div class="help-card">
+                    <div class="help-icon">❓</div>
+                    <h4>NEED HELP?</h4>
+                    <p>In case need to report problems about meeting, courses, or ratings. Provided by the help center.</p>
+                    <button class="help-button">Go to Help Center</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <header class="dashboard-header">
+                <div class="header-welcome">
+                    <h1>Welcome to TutorITS</h1>
+                    <p>Welcome back, <span class="username">@student</span>!</p>
+                </div>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" placeholder="Search courses" class="search-input">
+                    </div>
+                    <a href="account.html" class="account-link">
+                        <span class="account-icon">👤</span>
+                    </a>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <main class="dashboard-main">
+                <!-- Welcome Section -->
+                <section class="welcome-section">
+                    <h1>Welcome back to TutorITS!</h1>
+                    <p>Continue your learning journey with our expert tutors and courses.</p>
+                </section>
+
+                <!-- Explore Courses Section -->
+                <section class="courses-section">
+                    <h2>Explore Courses</h2>
+                    <div class="courses-grid">
+                        <div class="course-card">
+                            <h3>Kalkulus I</h3>
+                        </div>
+                        <div class="course-card">
+                            <h3>Fisika Mekanik</h3>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Popular Tutors Section -->
+                <section class="tutors-section">
+                    <h2>Popular Tutors</h2>
+                    <div class="tutors-grid">
+                        <div class="tutor-card">
+                            <div class="tutor-image">
+                                <img src="/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png" alt="Rizki Pratama">
+                            </div>
+                            <div class="tutor-info">
+                                <h3>Rizki Pratama</h3>
+                                <p class="tutor-title">Statistik & Data Science</p>
+                                <p class="tutor-specialization">Semester 6</p>
+                                <div class="tutor-price">Rp 80.000/jam</div>
+                                <div class="tutor-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span>(89)</span>
+                                </div>
+                                <div class="tutor-stats">
+                                    <span>245 siswa</span>
+                                    <span>1240 jam kerja</span>
+                                </div>
+                                <button class="hire-button">Sewa Sekarang</button>
+                                <button class="review-button">💬 Lihat Review</button>
+                            </div>
+                        </div>
+                        
+                        <div class="tutor-card">
+                            <div class="tutor-image">
+                                <img src="/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png" alt="Sari Indahsari">
+                            </div>
+                            <div class="tutor-info">
+                                <h3>Sari Indahsari</h3>
+                                <p class="tutor-title">Teknik Mesin</p>
+                                <p class="tutor-specialization">Semester 4</p>
+                                <div class="tutor-price">Rp 85.000/jam</div>
+                                <div class="tutor-rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span>(67)</span>
+                                </div>
+                                <div class="tutor-stats">
+                                    <span>156 siswa</span>
+                                    <span>780 jam kerja</span>
+                                </div>
+                                <button class="hire-button">Sewa Sekarang</button>
+                                <button class="review-button">💬 Lihat Review</button>
+                            </div>
+                        </div>
+                        
+                        <div class="tutor-card">
+                            <div class="tutor-image">
+                                <img src="/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png" alt="Ahmad Fauzi">
+                            </div>
+                            <div class="tutor-info">
+                                <h3>Ahmad Fauzi</h3>
+                                <p class="tutor-title">Matematika Terapan</p>
+                                <p class="tutor-specialization">Semester 3</p>
+                                <div class="tutor-price">Rp 75.000/jam</div>
+                                <div class="tutor-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span>(124)</span>
+                                </div>
+                                <div class="tutor-stats">
+                                    <span>312 siswa</span>
+                                    <span>1560 jam kerja</span>
+                                </div>
+                                <button class="hire-button">Sewa Sekarang</button>
+                                <button class="review-button">💬 Lihat Review</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

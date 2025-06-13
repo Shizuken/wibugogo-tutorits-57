@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - TutorITS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img src="/lovable-uploads/8fbf4b8f-dae2-4be5-9636-f2a52317c170.png" alt="TutorITS Logo" class="sidebar-logo">
+                <button class="sidebar-toggle">←</button>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item">
+                    <span class="nav-icon">🏠</span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="explore.html" class="nav-item">
+                    <span class="nav-icon">🔍</span>
+                    <span>Explore</span>
+                </a>
+                <a href="tutors.html" class="nav-item">
+                    <span class="nav-icon">👥</span>
+                    <span>Tutors</span>
+                </a>
+                <a href="courses.html" class="nav-item active">
+                    <span class="nav-icon">📚</span>
+                    <span>Courses</span>
+                </a>
+                
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Settings</h3>
+                    <a href="settings.html" class="nav-item">
+                        <span class="nav-icon">⚙️</span>
+                        <span>Settings</span>
+                    </a>
+                    <a href="account.html" class="nav-item">
+                        <span class="nav-icon">👤</span>
+                        <span>myITS Account</span>
+                    </a>
+                </div>
+            </nav>
+            
+            <div class="sidebar-help">
+                <div class="help-card">
+                    <div class="help-icon">❓</div>
+                    <h4>NEED HELP?</h4>
+                    <p>In case need to report problems about meeting, courses, or ratings. Provided by the help center.</p>
+                    <button class="help-button">Go to Help Center</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <header class="dashboard-header">
+                <div class="header-welcome">
+                    <h1>Welcome to TutorITS</h1>
+                    <p>Welcome back, <span class="username">@student</span>!</p>
+                </div>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" placeholder="Search courses" class="search-input">
+                    </div>
+                    <a href="account.html" class="account-link">
+                        <span class="account-icon">👤</span>
+                    </a>
+                </div>
+            </header>
+
+            <!-- Courses Content -->
+            <main class="courses-main">
+                <!-- Hero Section -->
+                <section class="courses-hero">
+                    <h1>Course Catalog</h1>
+                    <p>Comprehensive courses designed to help you master any subject</p>
+                </section>
+
+                <!-- Mathematics Courses -->
+                <section class="course-category">
+                    <div class="category-header">
+                        <h2>Mathematics</h2>
+                        <span class="course-count">4 courses</span>
+                    </div>
+                    <div class="course-videos-grid">
+                        <div class="course-video-card">
+                            <div class="video-image">
+                                <img src="/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png" alt="Course">
+                            </div>
+                            <div class="video-info">
+                                <h3>Integral Parsial dan Substitusi</h3>
+                                <p class="video-major">Matematika</p>
+                                <p class="video-tutor">Ahmad Wijaya</p>
+                                <div class="video-price">Rp 75.000</div>
+                                <div class="video-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span>(89)</span>
+                                </div>
+                                <div class="video-stats">
+                                    <span>234 siswa</span>
+                                    <span>567 kali ditonton</span>
+                                </div>
+                                <button class="buy-button">Beli Sekarang</button>
+                                <button class="review-button">💬 Lihat Review</button>
+                                <button class="preview-button">Lihat Preview Course</button>
+                            </div>
+                        </div>
+                        
+                        <div class="course-video-card">
+                            <div class="video-image">
+                                <img src="/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png" alt="Course">
+                            </div>
+                            <div class="video-info">
+                                <h3>Limit dan Kontinuitas Fungsi</h3>
+                                <p class="video-major">Matematika</p>
+                                <p class="video-tutor">Sari Indahsari</p>
+                                <div class="video-price">Rp 80.000</div>
+                                <div class="video-rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span>(67)</span>
+                                </div>
+                                <div class="video-stats">
+                                    <span>189 siswa</span>
+                                    <span>423 kali ditonton</span>
+                                </div>
+                                <button class="buy-button">Beli Sekarang</button>
+                                <button class="review-button">💬 Lihat Review</button>
+                                <button class="preview-button">Lihat Preview Course</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Physics Courses -->
+                <section class="course-category">
+                    <div class="category-header">
+                        <h2>Physics</h2>
+                        <span class="course-count">3 courses</span>
+                    </div>
+                    <div class="course-videos-grid">
+                        <div class="course-video-card">
+                            <div class="video-image">
+                                <img src="/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png" alt="Course">
+                            </div>
+                            <div class="video-info">
+                                <h3>Hukum Newton dan Aplikasinya</h3>
+                                <p class="video-major">Fisika</p>
+                                <p class="video-tutor">Budi Santoso</p>
+                                <div class="video-price">Rp 70.000</div>
+                                <div class="video-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span>(67)</span>
+                                </div>
+                                <div class="video-stats">
+                                    <span>178 siswa</span>
+                                    <span>445 kali ditonton</span>
+                                </div>
+                                <button class="buy-button">Beli Sekarang</button>
+                                <button class="review-button">💬 Lihat Review</button>
+                                <button class="preview-button">Lihat Preview Course</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Call to Action -->
+                <section class="cta-section">
+                    <h3>Can't find what you're looking for?</h3>
+                    <p>Request a new course and we'll work with our tutors to create it</p>
+                    <button class="cta-button">Request Course</button>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

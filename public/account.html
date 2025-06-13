@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - TutorITS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img src="/lovable-uploads/8fbf4b8f-dae2-4be5-9636-f2a52317c170.png" alt="TutorITS Logo" class="sidebar-logo">
+                <button class="sidebar-toggle">←</button>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item">
+                    <span class="nav-icon">🏠</span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="explore.html" class="nav-item">
+                    <span class="nav-icon">🔍</span>
+                    <span>Explore</span>
+                </a>
+                <a href="tutors.html" class="nav-item">
+                    <span class="nav-icon">👥</span>
+                    <span>Tutors</span>
+                </a>
+                <a href="courses.html" class="nav-item">
+                    <span class="nav-icon">📚</span>
+                    <span>Courses</span>
+                </a>
+                
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Settings</h3>
+                    <a href="settings.html" class="nav-item">
+                        <span class="nav-icon">⚙️</span>
+                        <span>Settings</span>
+                    </a>
+                    <a href="account.html" class="nav-item active">
+                        <span class="nav-icon">👤</span>
+                        <span>myITS Account</span>
+                    </a>
+                </div>
+            </nav>
+            
+            <div class="sidebar-help">
+                <div class="help-card">
+                    <div class="help-icon">❓</div>
+                    <h4>NEED HELP?</h4>
+                    <p>In case need to report problems about meeting, courses, or ratings. Provided by the help center.</p>
+                    <button class="help-button">Go to Help Center</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <header class="dashboard-header">
+                <div class="header-welcome">
+                    <h1>Welcome to TutorITS</h1>
+                    <p>Welcome back, <span class="username">@student</span>!</p>
+                </div>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" placeholder="Search courses" class="search-input">
+                    </div>
+                    <a href="account.html" class="account-link">
+                        <span class="account-icon">👤</span>
+                    </a>
+                </div>
+            </header>
+
+            <!-- Account Content -->
+            <main class="account-main">
+                <!-- Hero Section -->
+                <section class="account-hero">
+                    <h1>myITS Account</h1>
+                    <p>Manage your academic profile and information</p>
+                </section>
+
+                <div class="account-container">
+                    <!-- Profile Information -->
+                    <section class="account-section">
+                        <h2>Profile Information</h2>
+                        <div class="profile-grid">
+                            <div class="profile-field">
+                                <label>Student ID</label>
+                                <input type="text" value="05111940000XXX" readonly class="readonly-input">
+                            </div>
+                            <div class="profile-field">
+                                <label>Full Name</label>
+                                <input type="text" value="Student Name">
+                            </div>
+                            <div class="profile-field">
+                                <label>Email</label>
+                                <input type="email" value="student@its.ac.id">
+                            </div>
+                            <div class="profile-field">
+                                <label>Department</label>
+                                <input type="text" value="Teknik Informatika">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Academic Information -->
+                    <section class="account-section">
+                        <h2>Academic Information</h2>
+                        <div class="academic-grid">
+                            <div class="academic-stat">
+                                <label>Current Semester</label>
+                                <div class="stat-value">5</div>
+                            </div>
+                            <div class="academic-stat gpa">
+                                <label>Current GPA</label>
+                                <div class="stat-value">3.75</div>
+                            </div>
+                            <div class="academic-stat">
+                                <label>Credits Completed</label>
+                                <div class="stat-value">102</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Learning Progress -->
+                    <section class="account-section">
+                        <h2>Learning Progress</h2>
+                        <div class="progress-grid">
+                            <div class="progress-card courses">
+                                <h3>Courses Completed</h3>
+                                <div class="progress-value">23</div>
+                            </div>
+                            <div class="progress-card streak">
+                                <h3>Study Streak</h3>
+                                <div class="progress-value">7 days</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Action Buttons -->
+                    <section class="account-actions">
+                        <button class="save-button">Save Changes</button>
+                        <button class="cancel-button">Cancel</button>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

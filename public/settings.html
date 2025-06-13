@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - TutorITS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img src="/lovable-uploads/8fbf4b8f-dae2-4be5-9636-f2a52317c170.png" alt="TutorITS Logo" class="sidebar-logo">
+                <button class="sidebar-toggle">←</button>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item">
+                    <span class="nav-icon">🏠</span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="explore.html" class="nav-item">
+                    <span class="nav-icon">🔍</span>
+                    <span>Explore</span>
+                </a>
+                <a href="tutors.html" class="nav-item">
+                    <span class="nav-icon">👥</span>
+                    <span>Tutors</span>
+                </a>
+                <a href="courses.html" class="nav-item">
+                    <span class="nav-icon">📚</span>
+                    <span>Courses</span>
+                </a>
+                
+                <div class="nav-section">
+                    <h3 class="nav-section-title">Settings</h3>
+                    <a href="settings.html" class="nav-item active">
+                        <span class="nav-icon">⚙️</span>
+                        <span>Settings</span>
+                    </a>
+                    <a href="account.html" class="nav-item">
+                        <span class="nav-icon">👤</span>
+                        <span>myITS Account</span>
+                    </a>
+                </div>
+            </nav>
+            
+            <div class="sidebar-help">
+                <div class="help-card">
+                    <div class="help-icon">❓</div>
+                    <h4>NEED HELP?</h4>
+                    <p>In case need to report problems about meeting, courses, or ratings. Provided by the help center.</p>
+                    <button class="help-button">Go to Help Center</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <header class="dashboard-header">
+                <div class="header-welcome">
+                    <h1>Welcome to TutorITS</h1>
+                    <p>Welcome back, <span class="username">@student</span>!</p>
+                </div>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" placeholder="Search courses" class="search-input">
+                    </div>
+                    <a href="account.html" class="account-link">
+                        <span class="account-icon">👤</span>
+                    </a>
+                </div>
+            </header>
+
+            <!-- Settings Content -->
+            <main class="settings-main">
+                <!-- Hero Section -->
+                <section class="settings-hero">
+                    <h1>Settings</h1>
+                    <p>Customize your learning experience</p>
+                </section>
+
+                <div class="settings-container">
+                    <!-- Preferences -->
+                    <section class="settings-section">
+                        <h2>Preferences</h2>
+                        <div class="preference-item">
+                            <div class="preference-info">
+                                <h3>Email Notifications</h3>
+                                <p>Receive updates about your courses</p>
+                            </div>
+                            <input type="checkbox" checked>
+                        </div>
+                        <div class="preference-item">
+                            <div class="preference-info">
+                                <h3>Course Reminders</h3>
+                                <p>Get reminded about upcoming lessons</p>
+                            </div>
+                            <input type="checkbox" checked>
+                        </div>
+                        <div class="preference-item">
+                            <div class="preference-info">
+                                <h3>Dark Mode</h3>
+                                <p>Switch to dark theme</p>
+                            </div>
+                            <input type="checkbox">
+                        </div>
+                    </section>
+
+                    <!-- Language -->
+                    <section class="settings-section">
+                        <h2>Language</h2>
+                        <div class="language-selector">
+                            <label>Display Language</label>
+                            <select>
+                                <option>English</option>
+                                <option>Bahasa Indonesia</option>
+                            </select>
+                        </div>
+                    </section>
+
+                    <!-- Privacy -->
+                    <section class="settings-section">
+                        <h2>Privacy</h2>
+                        <div class="privacy-setting">
+                            <div class="privacy-info">
+                                <h3>Profile Visibility</h3>
+                                <p>Control who can see your profile</p>
+                            </div>
+                            <select>
+                                <option>Public</option>
+                                <option>Private</option>
+                            </select>
+                        </div>
+                    </section>
+
+                    <!-- Action Buttons -->
+                    <section class="settings-actions">
+                        <button class="save-button">Save Changes</button>
+                        <button class="reset-button">Reset to Default</button>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
