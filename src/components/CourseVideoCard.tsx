@@ -1,46 +1,55 @@
+import { Star, Users, MessageSquare, Clock } from "lucide-react";
 
-import { Star, Users, MessageSquare, Phone, Clock } from "lucide-react";
-
-interface TutorCardProps {
-  name: string;
+interface CourseVideoCardProps {
+  videoTitle: string;
+  major: string;
+  tutorName: string;
   image: string;
-  title: string;
-  specialization: string;
   price: string;
   rating: number;
   studentCount: number;
   reviewCount: number;
-  workingHours: number;
+  viewCount: number;
 }
 
-const TutorCard = ({ name, image, title, specialization, price, rating, studentCount, reviewCount, workingHours }: TutorCardProps) => {
+const CourseVideoCard = ({ 
+  videoTitle, 
+  major, 
+  tutorName, 
+  image, 
+  price, 
+  rating, 
+  studentCount, 
+  reviewCount, 
+  viewCount 
+}: CourseVideoCardProps) => {
   return (
     <div className="bg-white rounded-xl border border-pastel-sky-blue shadow-sm hover:shadow-md transition-all duration-200 hover:scale-105 cursor-pointer overflow-hidden">
-      {/* Profile Image */}
+      {/* Course Image */}
       <div className="aspect-square bg-cream-white overflow-hidden relative">
         <img 
           src={image} 
-          alt={name}
+          alt={videoTitle}
           className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
         />
       </div>
       
       {/* Content */}
       <div className="p-4 space-y-3">
-        {/* Name and Title */}
+        {/* Video Title, Major, and Tutor */}
         <div className="space-y-1">
-          <h3 className="font-semibold text-deep-navy text-sm leading-tight">{name}</h3>
-          <p className="text-xs text-graphite-gray">{title}</p>
-          <p className="text-xs text-scholarly-blue font-medium">{specialization}</p>
+          <h3 className="font-semibold text-deep-navy text-sm leading-tight">{videoTitle}</h3>
+          <p className="text-xs text-graphite-gray">{major}</p>
+          <p className="text-xs text-scholarly-blue font-medium">{tutorName}</p>
         </div>
         
-        {/* Price and Area of Expertise */}
+        {/* Price and About Tutor */}
         <div className="flex gap-2">
           <div className="bg-bright-mustard text-deep-navy text-xs font-semibold px-2 py-1 rounded-md">
             {price}
           </div>
           <button className="bg-pastel-sky-blue text-deep-navy text-xs font-medium px-2 py-1 rounded-md hover:bg-scholarly-blue hover:text-white transition-colors">
-            Area Keahlian
+            About Tutor
           </button>
         </div>
         
@@ -83,7 +92,7 @@ const TutorCard = ({ name, image, title, specialization, price, rating, studentC
           </div>
         </div>
         
-        {/* Student Count and Working Hours */}
+        {/* Student Count and View Count */}
         <div className="flex items-center justify-between text-xs text-graphite-gray">
           <div className="flex items-center gap-1">
             <Users size={12} />
@@ -91,23 +100,28 @@ const TutorCard = ({ name, image, title, specialization, price, rating, studentC
           </div>
           <div className="flex items-center gap-1">
             <Clock size={12} />
-            <span>{workingHours} jam kerja</span>
+            <span>{viewCount} kali ditonton</span>
           </div>
         </div>
         
-        {/* Hire Now Button */}
+        {/* Buy Now Button */}
         <button className="w-full bg-bright-mustard hover:bg-bright-mustard/80 text-deep-navy text-xs font-medium py-2 px-3 rounded-lg transition-colors duration-200 mb-2">
-          Sewa Sekarang
+          Beli Sekarang
         </button>
         
         {/* Review Button */}
-        <button className="w-full bg-scholarly-blue hover:bg-pastel-sky-blue text-white text-xs font-medium py-2 px-3 rounded-lg transition-colors duration-200 flex items-center justify-center gap-1">
+        <button className="w-full bg-scholarly-blue hover:bg-pastel-sky-blue text-white text-xs font-medium py-2 px-3 rounded-lg transition-colors duration-200 flex items-center justify-center gap-1 mb-2">
           <MessageSquare size={12} />
           Lihat Review
+        </button>
+        
+        {/* Preview Course Button */}
+        <button className="w-full bg-pastel-sky-blue hover:bg-scholarly-blue text-deep-navy hover:text-white text-xs font-medium py-2 px-3 rounded-lg transition-colors duration-200">
+          Lihat Preview Course
         </button>
       </div>
     </div>
   );
 };
 
-export default TutorCard;
+export default CourseVideoCard;

@@ -1,25 +1,125 @@
 
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
-import CourseCard from "@/components/CourseCard";
+import CourseVideoCard from "@/components/CourseVideoCard";
 
 const Courses = () => {
   const coursesByCategory = {
     "Mathematics": [
-      { title: "Kalkulus I", students: 234, rating: 4.8 },
-      { title: "Kalkulus II", students: 189, rating: 4.7 },
-      { title: "Aljabar Linear", students: 156, rating: 4.6 },
-      { title: "Statistika", students: 201, rating: 4.9 }
+      { 
+        videoTitle: "Integral Parsial dan Substitusi", 
+        major: "Matematika", 
+        tutorName: "Dr. Ahmad Wijaya",
+        image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
+        price: "Rp 75.000",
+        rating: 5,
+        students: 234, 
+        reviewCount: 89,
+        viewCount: 567
+      },
+      { 
+        videoTitle: "Limit dan Kontinuitas Fungsi", 
+        major: "Matematika", 
+        tutorName: "Prof. Sari Indahsari",
+        image: "/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png",
+        price: "Rp 80.000",
+        rating: 4,
+        students: 189, 
+        reviewCount: 67,
+        viewCount: 423
+      },
+      { 
+        videoTitle: "Matriks dan Determinan", 
+        major: "Matematika", 
+        tutorName: "Dr. Rizki Pratama",
+        image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
+        price: "Rp 65.000",
+        rating: 5,
+        students: 156, 
+        reviewCount: 78,
+        viewCount: 890
+      },
+      { 
+        videoTitle: "Distribusi Probabilitas", 
+        major: "Statistika", 
+        tutorName: "Dr. Maya Sari",
+        image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
+        price: "Rp 90.000",
+        rating: 4,
+        students: 201, 
+        reviewCount: 92,
+        viewCount: 334
+      }
     ],
     "Physics": [
-      { title: "Fisika Mekanik", students: 178, rating: 4.7 },
-      { title: "Fisika Dasar", students: 298, rating: 4.8 },
-      { title: "Termodinamika", students: 134, rating: 4.5 }
+      { 
+        videoTitle: "Hukum Newton dan Aplikasinya", 
+        major: "Fisika", 
+        tutorName: "Prof. Budi Santoso",
+        image: "/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png",
+        price: "Rp 70.000",
+        rating: 5,
+        students: 178, 
+        reviewCount: 67,
+        viewCount: 445
+      },
+      { 
+        videoTitle: "Gelombang dan Bunyi", 
+        major: "Fisika", 
+        tutorName: "Dr. Dewi Maharani",
+        image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
+        price: "Rp 85.000",
+        rating: 4,
+        students: 298, 
+        reviewCount: 134,
+        viewCount: 678
+      },
+      { 
+        videoTitle: "Kalor dan Perpindahan Energi", 
+        major: "Fisika", 
+        tutorName: "Dr. Dimas Prasetyo",
+        image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
+        price: "Rp 60.000",
+        rating: 5,
+        students: 134, 
+        reviewCount: 56,
+        viewCount: 234
+      }
     ],
     "Chemistry": [
-      { title: "Kimia Industri", students: 156, rating: 4.6 },
-      { title: "Kimia Organik", students: 123, rating: 4.7 },
-      { title: "Kimia Analitik", students: 98, rating: 4.5 }
+      { 
+        videoTitle: "Reaksi Redoks dan Elektrolisis", 
+        major: "Kimia", 
+        tutorName: "Prof. Fitri Handayani",
+        image: "/lovable-uploads/6ecc100c-45f5-4483-8f3b-727b5b51e6b4.png",
+        price: "Rp 95.000",
+        rating: 4,
+        students: 156, 
+        reviewCount: 78,
+        viewCount: 512
+      },
+      { 
+        videoTitle: "Struktur Molekul Organik", 
+        major: "Kimia Organik", 
+        tutorName: "Dr. Arief Wibowo",
+        image: "/lovable-uploads/00e7448d-c73a-44f1-b2fe-bf376bfad6a9.png",
+        price: "Rp 75.000",
+        rating: 5,
+        students: 123, 
+        reviewCount: 89,
+        viewCount: 367
+      },
+      { 
+        videoTitle: "Titrasi dan Analisis Kuantitatif", 
+        major: "Kimia Analitik", 
+        tutorName: "Dr. Anisa Putri",
+        image: "/lovable-uploads/e9f6ecf9-d5fd-4eef-a37d-96bfbce21f67.png",
+        price: "Rp 55.000",
+        rating: 4,
+        students: 98, 
+        reviewCount: 45,
+        viewCount: 789
+      }
     ]
   };
 
@@ -47,18 +147,18 @@ const Courses = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                   {courses.map((course, index) => (
-                    <div key={index} className="space-y-3">
-                      <CourseCard title={course.title} />
-                      <div className="bg-pastel-sky-blue rounded-lg p-3 text-sm space-y-2">
-                        <div className="flex items-center justify-between">
-                          <span className="text-graphite-gray">{course.students} students enrolled</span>
-                          <div className="flex items-center">
-                            <span className="text-bright-mustard text-lg">★</span>
-                            <span className="ml-1 text-deep-navy font-medium">{course.rating}/5.0</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <CourseVideoCard
+                      key={index}
+                      videoTitle={course.videoTitle}
+                      major={course.major}
+                      tutorName={course.tutorName}
+                      image={course.image}
+                      price={course.price}
+                      rating={course.rating}
+                      studentCount={course.students}
+                      reviewCount={course.reviewCount}
+                      viewCount={course.viewCount}
+                    />
                   ))}
                 </div>
               </section>
